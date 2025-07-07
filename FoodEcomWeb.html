@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yfood</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Lucid Icon -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+</head>
+<body>
+  <!-- Price Tag -->
+  <div class="Price-tag z-[900] fixed font-bold rotate-[-90deg] bg-black h-[35px] top-[380px] p-2 ms-[-70px] w-[180px] flex items-center rounded-[5px] text-[14px] cursor-pointer hover:text-green-200">
+    <div class="pr-2">10,000៛ FOR YOU!</div>
+    <button type="button" class="ps-2 border-l-2 border-white cursor-pointer"><i data-lucide="x"></i></button>
+  </div>
+  
+  <!-- My Code: Nav Bar -->
+  <section class="container-fruid mx-auto h-[78px] flex w-full">
+      <div class=" fixed h-[78px] z-[1000] navbar justify-between bg-white lg:p-[20px_150px] md:p-[20px_30px] p-[20px_20px] shadow-sm text-[rgba(14,42,38,255)]">
+        <div class="navbar-start">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <details class="dropdown bg-transparent">
+                <summary class="lg:text-xl md:text-[18px] text-[10px] hover:underline hover:decoration-1 cursor-pointer">Shop</summary>
+                <div class="absolute left-[-50px] sm:left-[-10px]  mx-auto top-[50px] lg:w-[95vw] sm:w-[60vw] max-w-[1440px] bg-gray-100 rounded-[10px] mt-4 p-[50px] shadow-lg">
+                  <div class="flex justify-between pb-[50px] items-center">
+                      <h1 class="text-3xl font-extrabold">Shop</h1>
+                      <h1 class="flex gap-5 font-bold items-center cursor-pointer hover:underline">See All <i data-lucide="move-right"></i></h1>
+                  </div>
+                  <div class="card-container  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 scroll-auto overflow-y-auto max-h-screen">
+                       <div class="card-item group flex justify-start flex-col cursor-pointer">
+                         <img class="w-[100%] group-hover:scale-95 transition-transform duration-300 h-[200px] md:w-[80%] sm:w-[50%] object-cover mb-5 rounded-3xl" src="/Assets/image/Pro01" alt="Drinks">
+                         <h1 class="title text-2xl font-bold">Drinks</h1>
+                         <p class="des text-sm text-gray-600">Our ready-to-drink meals in many delicious flavours.</p>
+                       </div>
+                       <div class="card-item group flex justify-start flex-col cursor-pointer">
+                        <img class="w-[100%] group-hover:scale-95 transition-transform duration-300 h-[200px] md:w-[80%]  sm:w-[50%] object-cover mb-5 rounded-3xl" src="/Assets/image/Pro02.webp" alt="Powder">
+                        <h1 class="title text-2xl font-bold">Powder</h1>
+                        <p class="des text-sm text-gray-600">One bag, 12 meals. Mix your own filling drinks.</p>
+                      </div>
+                      <div class="card-item group flex justify-start flex-col cursor-pointer">
+                        <img class="w-[100%] group-hover:scale-95 transition-transform duration-300 h-[200px] md:w-[80%]  sm:w-[50%] object-cover mb-5 rounded-3xl" src="/Assets/image/Pro03" alt="Bars">
+                        <h1 class="title text-2xl font-bold">Bars</h1>
+                        <p class="des text-sm text-gray-600">Perfect for anytime and every taste: yfood bars.</p>
+                      </div>
+                      <div class="card-item group flex justify-start flex-col cursor-pointer">
+                        <img class="w-[100%] group-hover:scale-95 transition-transform duration-300 h-[200px] md:w-[80%]  sm:w-[50%] object-cover mb-5 rounded-3xl" src="/Assets/image/Pro04" alt="Taster packs">
+                        <h1 class="title text-2xl font-bold">Taster packs</h1>
+                        <p class="des text-sm text-gray-600">Find out which flavours you like best.</p>
+                      </div>
+                      <div class="card-item group flex justify-start flex-col cursor-pointer">
+                        <img class="w-[100%] group-hover:scale-95 transition-transform duration-300 h-[200px] md:w-[80%]  sm:w-[50%] object-cover mb-5 rounded-3xl" src="/Assets/image/Pro05" alt="Limited editions">
+                        <h1 class="title text-2xl font-bold">Limited editions</h1>
+                        <p class="des text-sm text-gray-600">Experience unique flavours with our Limited Editions.</p>
+                      </div>
+                  </div>
+                </div>
+              </details>
+          </li>
+          <li>
+            <details class="dropdown bg-transparent">
+              <summary class="lg:text-xl md:text-[18px] text-[10px] hover:underline hover:decoration-1 cursor-pointer">Smart Food</summary>
+              <ul class="absolute top-[50px] left-0 p-2 mt-4 bg-white text-[16px] w-40 shadow-lg rounded-lg">
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">What's yfood?</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">About drinks</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">About powders</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">About bars</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="dropdown bg-transparent">
+              <summary class="text-xl md:text-[18px] text-[10px]  hover:underline hover:decoration-1 cursor-pointer">Info</summary>
+              <ul class="absolute top-[50px] left-0 p-2 mt-4 bg-white text-[16px] w-40 shadow-lg rounded-lg">
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">Subscription</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">Store Locators</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">Refer a friend</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">Story</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">Health benefits</a></li>
+                <li class="hover:bg-gray-100 p-2 rounded"><a href="#">FAQ</a></li>
+              </ul>
+            </details>
+          </li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+            <a href="" class="cursor-pointer text-xl">
+              <img src="/Assets/image/yFood_Logo.svg" alt="">
+            </a>
+        </div>
+        <div class="navbar-end">
+          <ul class="flex gap-5 justify-end">
+            <i data-lucide="search" class="hover:scale-105 cursor-pointer"></i>
+            <i data-lucide="user" class="hover:scale-105 cursor-pointer"></i>
+            <i data-lucide="shopping-cart" class="hover:scale-105 cursor-pointer"></i>
+        </ul>
+        </div>
+      </div>    
+  </section>
+
+  <!-- Under nav bar -->
+  <section class="container-fruid h-[120px] w-[100%] flex bg-[rgba(230,183,211,255)]">
+    <div class="flex flex-row items-center lg:pl-20 md:pl-3 pl-2 text-[rgba(14,42,38,255)] md:justify-center md:gap-2">
+      <h2 class="lg:text-4xl font-extrabold md:text-[24px] text-[16px]">For cherry lovers-only better.</h2>
+      <a href="#" class="underline lg:pl-5 text-[15px] font-semibold md:pl-0">Order now</a>
+    </div>
+    <img src="/Assets/image/UnderNav.png" class="ml-auto select-none" alt="Protected image">
+  </section>
+
+  <!-- Hero Section -->
+  <section class="container-fluid bg-[rgba(14,42,38,255)] h-[570px]">
+    <div class="grid grid-cols-2 h-full">
+      <div class="hero-left w-[75%] flex flex-wrap items-center justify-center ml-auto gap-2">
+        <div class="title lg:text-8xl md:text-6xl text-4xl font-extrabold">1 drink. 1 meal.</div>
+        <div class="description text-[18px] mt-[-150px]">Modern nutrition that fits perfectly into your fast-paced lifestyle: Delicious.
+          Simple. Balanced. Good for you and your wallet. Smart, right?</div>
+          <div class="w-full mt-[-200px]">
+            <button class="btn hover:bg-green-50 h-16 w-40 rounded-[10px] bg-white text-[rgba(14,42,38,255)] text-[18px] ">Order yfood</button>
+        </div>
+      </div>
+
+      <div class="hero-right flex items-center justify-center w-[75%]">
+        <img src="/Assets/image/yFood_Bottles.png" alt="Food Bottles" class="w-155 max-w-full h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners Section -->
+  <section class="container m-auto ">
+    <div class="carousel rounded-box h-[80px] gap-[60px] p-[20px] mt-5">
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part01.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part02.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part03.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part04.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part05.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part06.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part07.png"
+          alt="" />
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/Assets/image/part08.png"
+          alt="" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Box Section -->
+  <div class="container m-auto heromin-h-screen">
+    <div class="hero-content flex-col lg:flex-row m-auto grid lg:grid-cols-2 lg:w-[65%] md:w-[95%] lg:h-[600px] lg:gap-[90px] md:gap-[250px] gap-[250px]">
+      <div class="">
+        <img
+        src="/Assets/image/yPerson01.webp"
+        class="rounded-[20px] shadow-2xl h-[90%]"
+        />
+      </div>
+      <div class=" text-[rgba(14,42,38,255)] text-[18px] mt-[-210px] lg:mb-[-200px] md:mb-5">
+        <h1 class="text-4xl font-extrabold">Everything you need. In one bottle.</h1>
+        <p class="py-6">
+          Do you always manage to eat <a href="#" class="underline">healthy</a>,
+          especially when time is tight? Many of
+          us don't and often resort to fast food
+          or skip meals, which isn't the best
+          option.<br>
+          yfood is the perfect solution: balanced,
+          quick, easy, and super tasty. Give it a
+          try!<br>
+          <ul class="leading-5 space-y-3">
+            <li class="flex"><i data-lucide="circle-check" class="bg-green-200 rounded-[100%] mr-2"></i> 1 drink. 1 meal</li>
+            <li class="flex"><i data-lucide="circle-check" class="bg-green-200 rounded-[100%] mr-2"></i> Keeps you full for 3-5 hours</li>
+            <li class="flex"><i data-lucide="circle-check" class="bg-green-200 rounded-[100%] mr-2"></i> 26 vitamins and minerals</li>
+            <li class="flex"><i data-lucide="circle-check" class="bg-green-200 rounded-[100%] mr-2"></i> Affordabl: starting from 3.99$ per meal</li>
+          </ul>
+        </p>
+        <!-- <button class="btn btn-primary">Get Started</button> -->
+        <div class="">
+          <button class="
+              lg:mt-20
+              md:mt-5
+              sm:mt-5
+              group
+              shadow-2xl
+              shadow-black/30
+              p-5
+              cursor-pointer 
+              relative  
+              text-xl 
+              font-extrabold 
+              border-0 
+              flex 
+              items-center 
+              justify-center
+              bg-transparent
+              text-[rgba(14,42,38,255)] text-[18px]
+              h-auto  
+              w-[170px]  
+              overflow-hidden   
+              transition-all
+              duration-100">
+            <span class="
+                 group-hover:w-full
+                 absolute 
+                 left-0 
+                 h-full 
+                 w-5 
+                 border-y
+                 border-l
+                 border-[rgba(14,42,38,255)] text-[18px]
+                 transition-all
+                 duration-500">
+            </span>
+            <p class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all
+                 duration-200">Order yfood</p>
+            <span class="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Thank
+              you!
+            </span>
+            <span class="group-hover:w-full absolute right-0 h-full w-5  border-y border-r  border-[rgba(14,42,38,255)] text-[18px] transition-all duration-500">
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2Boxes Section -->
+  <div class="max-w-7xl mx-auto mt-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Cherry Card -->
+        <div class="relative h-[400px] rounded-[20px] overflow-hidden shadow-2xl shadow-black/30">
+            <img class="absolute inset-0 w-full h-full object-cover" 
+                 src="//yfood.com/cdn/shop/files/CAMPAIGN_fruity-cherry_content-card_PA692.png?v=1749022345" 
+                 alt="Cherry yfood drink">
+            
+            <!-- Content overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent">
+                <div class="p-6">
+                    <h1 class="text-2xl font-extrabold text-white mb-4 leading-tight max-w-[80%]">
+                        For everyone who loves cherries - only better.
+                    </h1>
+                </div>
+                
+                <!-- Original Button -->
+                <button class="
+                    absolute
+                    mx-[30px]
+                    
+                    shadow-2xl
+                    shadow-black/30
+                    group
+                    
+                    cursor-pointer 
+                  mt-[200px]
+                  
+                  p-6
+                  bg-white
+                    
+                    text-xl 
+                    font-extrabold 
+                    
+                    flex 
+                    items-center 
+                    justify-center
+      
+                    text-[rgba(14,42,38,255)] text-[18px]
+                    h-auto  
+                    w-[170px]  
+                    overflow-hidden   
+                    transition-all
+                    duration-100">
+                  <span class="
+                      group-hover:w-full
+                      absolute 
+                      left-0 
+                      h-full 
+                      w-5 
+                      border-y
+                      border-l
+                      border-[rgba(14,42,38,255)] text-[18px]
+                      transition-all
+                      duration-500">
+                  </span>
+                  <p class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all
+                      duration-200">Order yfood</p>
+                  <span class="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Thank
+                    you!
+                  </span>
+                  <span class="group-hover:w-full absolute right-0 h-full w-5  border-y border-r  border-[rgba(14,42,38,255)] text-[18px] transition-all duration-500">
+                  </span>
+            </button>
+            </div>
+        </div>
+
+        <!-- Subscription Card -->
+        <div class="relative h-[400px] rounded-[20px] overflow-hidden shadow-2xl shadow-black/30">
+            <img class="absolute inset-0 w-full h-full object-cover" 
+                 src="//yfood.com/cdn/shop/files/yfood-home-section-2-subscription.webp?v=1720953684" 
+                 alt="yfood subscription">
+            
+            <!-- Content overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent">
+                <div class="p-6">
+                    <h1 class="text-2xl font-extrabold text-white mb-4 leading-tight">
+                        Subscribe and save 15%
+                    </h1>
+                    
+                    <ul class="text-white space-y-2">
+                        <li class="flex items-center text-lg">
+                            <span class="w-2 h-2 bg-white rounded-full mr-3"></span>
+                            Save up to 15%
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <span class="w-2 h-2 bg-white rounded-full mr-3"></span>
+                            Change, pause or cancel anytime
+                        </li>
+                        <li class="flex items-center text-lg">
+                            <span class="w-2 h-2 bg-white rounded-full mr-3"></span>
+                            Access to exclusive promotions
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Original Button -->
+                <button class="
+                    absolute
+                    mx-[30px]
+                    shadow-2xl
+                    shadow-black/30
+                    group
+                    mt-[130px]
+                    cursor-pointer 
+                  
+                  
+                  p-6
+                  bg-white
+                    
+                    text-xl 
+                    font-extrabold 
+                    
+                    flex 
+                    items-center
+                    justify-center
+      
+                    text-[rgba(14,42,38,255)] text-[18px]
+                    h-auto  
+                    w-[170px]  
+                    overflow-hidden   
+                    transition-all
+                    duration-100">
+                  <span class="
+                      group-hover:w-full
+                      absolute 
+                      left-0 
+                      h-full 
+                      w-5 
+                      border-y
+                      border-l
+                      border-[rgba(14,42,38,255)] text-[18px]
+                      transition-all
+                      duration-500">
+                  </span>
+                  <p class="group-hover:opacity-0 group-hover:translate-x-[-100%] absolute translate-x-0 transition-all
+                      duration-200">Order yfood</p>
+                  <span class="group-hover:translate-x-0  group-hover:opacity-100 absolute  translate-x-full opacity-0  transition-all duration-200">Thank
+                    you!
+                  </span>
+                  <span class="group-hover:w-full absolute right-0 h-full w-5  border-y border-r  border-[rgba(14,42,38,255)] text-[18px] transition-all duration-500">
+                  </span>
+            </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recommendation Section -->
+<section class="recomment-container mt-[80px] w-full m-auto">
+  <h1 class=" text-[rgba(14,42,38,255)] text-5xl font-extrabold mb-[50px] lg:px-[80px] text-center">Recommended by nutritional experts.</h1>
+  <div class="carousel carousel-end rounded-box w-[100%] gap-[60px] p-[20px] m-auto ">
+    <div class="carousel-item px-[100px] md:px-[80px] sm:px-[40px]"></div>
+    <div class="carousel-item flex flex-col rounded-[20px] bg-green-100 p-[30px] w-[700px]">
+      <p class="text-[rgba(14,42,38,255)] text-[18px] italic leading-relaxed mb-4">
+          "Cooking with fresh ingredients is the most important thing for me. But
+          if that doesn't work out, it's good to have a high-quality substitute in
+          stock: Smart Food. For me, yfood products are the first choice. They are
+          filling and provide all the essential nutrients - even the important fiber
+          that our body needs. Because a wholesome and balanced diet is crucial
+          for health and performance in the long term, even in stressful everyday
+          situations."
+      </p>
+      <div class="line w-full my-10 h-[2px] bg-[rgba(14,42,38,255)]"></div>
+      <div class="info flex flex-row gap-[20px]">
+          <img class="w-auto h-[140px] rounded-[10px] object-cover mb-4" 
+            src="//uk.yfood.com/cdn/shop/files/yfood-home-nutritional-experts-dagmar.webp?v=1724148766&width=360">
+          <div>
+              <h3 class="text-[rgba(14,42,38,255)] text-[20px] font-bold mb-1">Dagmar von Cramm</h3>
+              <p class="text-[rgba(14,42,38,255)] text-[16px]">Nutritionist & author</p>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item flex flex-col rounded-[20px] bg-green-100 p-[30px] w-[700px]">
+      <p class="text-[rgba(14,42,38,255)] text-[18px] italic leading-relaxed mb-[40px]">
+        "As a nutritionist and mother, I see yfood as an innovative solution to
+        easily integrate healthy nutrition into everyday life — even when things
+        need to be quick or you're on the go. The products provide a balanced
+        nutrient profile and lead to long-lasting satiety. And all this without
+        compromising on taste and at a fair price. "
+      </p>
+      <div class="line w-full my-10 h-[2px] bg-[rgba(14,42,38,255)]"></div>
+      <div class="info flex flex-row gap-[20px]">
+          <img class="w-auto h-[140px] rounded-[10px] object-cover mb-4" 
+            src="//uk.yfood.com/cdn/shop/files/yfood-home-nutritional-experts-alina.webp?v=1724148764&width=360">
+          <div>
+              <h3 class="text-[rgba(14,42,38,255)] text-[20px] font-bold mb-1">Alina Fronh</h3>
+              <p class="text-[rgba(14,42,38,255)] text-[16px]">DGE Nutritionist</p>
+          </div>
+      </div>
+    </div>
+    <div class="carousel-item flex flex-col rounded-[20px] bg-green-100 p-[30px] w-[700px]">
+      <p class="text-[rgba(14,42,38,255)] text-[18px] italic leading-relaxed mb-[10px]">
+        "A balanced diet is crucial for optimal performance and recovery. With
+        yfood drinks, I can be sure that my body is well-nourished, especially
+        when it matters — whether it's during a demanding day or the next
+        workout. The perfect balance of proteins, fats, and carbohydrates is
+        conveniently packed in a bottle that I can easily put in my gym bag.
+        Always ready when hunger strikes. "
+      </p>
+      <div class="line w-full my-10 h-[2px] bg-[rgba(14,42,38,255)]"></div>
+      <div class="info flex flex-row gap-[20px]">
+          <img class="w-auto h-[140px] rounded-[10px] object-cover mb-4" 
+            src="//uk.yfood.com/cdn/shop/files/yfood-home-nutritional-experts-diego.png?v=1724961439&width=360">
+          <div>
+              <h3 class="text-[rgba(14,42,38,255)] text-[20px] font-bold mb-1">Diago Bichler</h3>
+              <p class="text-[rgba(14,42,38,255)] text-[16px]">Fitness Coach & Founder of BiPHiT</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Find your food Section -->
+<section class="container m-auto mt-[80px] mb-[80px]">
+  <h1 class=" text-[rgba(14,42,38,255)] text-5xl font-extrabold mb-[80px] lg:px-[80px] text-center">Find your yfood.</h1>
+  <div class="card-container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+      <div class="card-item group flex justify-start flex-col cursor-pointer p-[10px] bg-green-100 rounded-[10px] shadow-lg">
+        <img class="w-[300px] m-auto group-hover:scale-95 transition-transform duration-300 h-auto object-cover mb-5 rounded-3xl" src="/Assets/image/Pro01" alt="Drinks">
+        <div class="flex flex-col-3 gap-[20px] m-auto items-center text-[rgba(14,42,38,255)] mb-[20px]">
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Classic</h1>
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Vegan🍀</h1>
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Fruity</h1>
+        </div>
+        <h1 class="title text-2xl text-center text-[rgba(14,42,38,255)] font-bold">Drinks</h1>
+        <p class="des text-xl p-[20px] text-[rgba(14,42,38,255)] text-center flex-wrap">Our ready-to-drink meals in many delicious flavours.</p>
+        <button class="btn text-3xl w-[90%] m-auto h-[60px] mt-[-70px] mb-[30px] bg-[rgba(14,42,38,255)] fw-bold group-hover:opacity-100 opacity-0" >Try Now</button>
+      </div>
+      <div class="card-item group flex justify-start flex-col cursor-pointer p-[10px] bg-green-100 rounded-[10px] shadow-lg">
+        <img class="w-[300px] m-auto group-hover:scale-95 transition-transform duration-300 h-auto object-cover mb-5 rounded-3xl" src="/Assets/image/Pro02.webp" alt="Drinks">
+        <div class="flex flex-col-3 gap-[20px] m-auto items-center text-[rgba(14,42,38,255)] mb-[20px]">
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Classic</h1>
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Vegan🍀</h1>
+
+        </div>
+        <h1 class="title text-2xl text-center text-[rgba(14,42,38,255)] font-bold">Powder</h1>
+        <p class="des text-xl p-[20px] pb-[45px] text-[rgba(14,42,38,255)] text-center flex-wrap">One bag. 12 meals. Mix your own filling drinks.</p>
+        <button class="btn text-3xl w-[90%] m-auto h-[60px] mt-[-70px] mb-[30px] bg-[rgba(14,42,38,255)] fw-bold group-hover:opacity-100 opacity-0" >Try Now</button>
+      </div>
+      <div class="card-item group flex justify-start flex-col cursor-pointer p-[10px] bg-green-100 rounded-[10px] shadow-lg">
+        <img class="w-[300px] m-auto group-hover:scale-95 transition-transform duration-300 h-auto object-cover mb-5 rounded-3xl" src="/Assets/image/Pro03" alt="Drinks">
+        <div class="flex flex-col-3 gap-[20px] m-auto items-center text-[rgba(14,42,38,255)] mb-[20px]">
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Classic</h1>
+          <h1 class="bg-green-300 p-[1px_10px] rounded-[20px]">Vegan🍀</h1>
+        </div>
+        <h1 class="title text-2xl text-center text-[rgba(14,42,38,255)] font-bold">Bars</h1>
+        <p class="des text-xl p-[20px] pb-[45px] text-[rgba(14,42,38,255)] text-center flex-wrap">Perfect for anytime and every taste: yfood bars.</p>
+        <button class="btn text-3xl w-[90%] m-auto h-[60px] mt-[-70px] mb-[30px] bg-[rgba(14,42,38,255)] fw-bold group-hover:opacity-100 opacity-0" >Try Now</button>
+      </div>
+      
+  </div>
+</section>
+
+<!-- Taste Good section-->
+ <div class="container m-auto flex lg:flex-col-2 sm:mb-[40px]">
+  <h1 class=" text-[rgba(14,42,38,255)] text-5xl font-extrabold mb-[20px] lg:px-[80px] text-center">It simply tastes good. Don't you agree?</h1>
+  <div class="btns space-x-7 absolute lg:right-[200px] lg:mt-[10px] md:mt-[80px] md:right-[80px] mt-[120px] sm:right-[20px]">
+    <a href="#slide0" class="btn btn-circle bg-[rgba(14,42,38,255)] w-[60px] hover:bg-green-400">❮</a>
+    <a href="#slide5" class="btn btn-circle bg-[rgba(14,42,38,255)] w-[60px] hover:bg-green-400">❯</a>
+  </div>
+</div>
+  <div class="carousel w-full gap-[20px]">
+    <div id="slide0" class="carousel-item relative w-[10%] h-[600px]" >
+      <img
+        src=""
+        class="w-full rounded-[20px]" />
+    </div>
+    <div id="slide1" class="carousel-item group relative w-auto h-[800px]">
+      <h1 class=" absolute top-1/2 -translate-y-1/2 font-extrabold rounded-[20px] my-10  inline-block mt-[-340px] text-[rgba(14,42,38,255)]" >fritz.meincke</h1>
+      <h1 class=" absolute top-1/2 -translate-y-1/2 bg-green-300 p-[1px_10px] rounded-[20px] my-10  inline-block mt-[-300px] text-[rgba(14,42,38,255)] group-hover:bg-green-200 group-hover:scale-[1.2] transition-transform duration-300" >@fritz.meincke</h1>
+      <img
+        src="//uk.yfood.com/cdn/shop/files/yfood-home-socialproof-fritz-no-nutri-score.webp?v=1745582997&width=750"
+        class=" w-full h-[600px] mt-[130px] rounded-[20px] shadow-lg group-hover:scale-[0.95] transition-transform duration-300 group-hover:brightness-125 brightness-100" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        
+        <!-- <a href="#slide2" class="btn btn-circle">❯</a> -->
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item  group relative w-auto h-[800px]" >
+      <h1 class=" absolute top-1/2 -translate-y-1/2 font-extrabold rounded-[20px] my-10  inline-block mt-[-340px] text-[rgba(14,42,38,255)]" >Vicky</h1>
+      <h1 class=" absolute top-1/2 -translate-y-1/2 bg-green-300 p-[1px_10px] rounded-[20px] my-10  inline-block mt-[-300px] text-[rgba(14,42,38,255)] group-hover:bg-green-200 group-hover:scale-[1.2] transition-transform duration-300" >@vicky.mw</h1>
+      <img
+        src="//uk.yfood.com/cdn/shop/files/yfood-home-socialproof-vicky.webp?v=1724148765&width=750"
+        class=" w-full h-[600px] mt-[130px] rounded-[20px] shadow-lg group-hover:scale-[0.95] transition-transform duration-300 group-hover:brightness-125 brightness-100" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a> -->
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item  group relative w-auto h-[800px]">
+      <h1 class=" absolute top-1/2 -translate-y-1/2 font-extrabold rounded-[20px] my-10  inline-block mt-[-340px] text-[rgba(14,42,38,255)]" >Joshua McCartney</h1>
+      <h1 class=" absolute top-1/2 -translate-y-1/2 bg-green-300 p-[1px_10px] rounded-[20px] my-10  inline-block mt-[-300px] text-[rgba(14,42,38,255)] group-hover:bg-green-200 group-hover:scale-[1.2] transition-transform duration-300" >@jostheintern</h1>
+      <img
+        src="//uk.yfood.com/cdn/shop/files/yfood-home-socialproof-joshtheintern-no-nutri-score.webp?v=1745582997&width=750"
+        class=" w-full h-[600px] mt-[130px] rounded-[20px] shadow-lg group-hover:scale-[0.95] transition-transform duration-300 group-hover:brightness-125 brightness-100" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a> -->
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item group relative w-auto h-[800px]">
+      <h1 class=" absolute top-1/2 -translate-y-1/2 font-extrabold rounded-[20px] my-10  inline-block mt-[-340px] text-[rgba(14,42,38,255)]" >Fabien DambÖk</h1>
+      <h1 class=" absolute top-1/2 -translate-y-1/2 bg-green-300 p-[1px_10px] rounded-[20px] my-10  inline-block mt-[-300px] text-[rgba(14,42,38,255)] group-hover:bg-green-200 group-hover:scale-[1.2] transition-transform duration-300" >@fritz.meincke</h1>
+      <img
+        src="//uk.yfood.com/cdn/shop/files/yfood-home-socialproof-fabien-no-nutri-score.webp?v=1745582997&width=750"
+        class="w-full h-[600px] mt-[130px] rounded-[20px] shadow-lg group-hover:scale-[0.95] transition-transform duration-300 group-hover:brightness-125 brightness-100" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide5" class="btn btn-circle">❯</a> -->
+      </div>
+    </div>
+    <div id="slide5" class="carousel-item group relative w-auto h-[800px]">
+      <h1 class=" absolute top-1/2 -translate-y-1/2 font-extrabold rounded-[20px] my-10  inline-block mt-[-340px] text-[rgba(14,42,38,255)]" >Ada JungHannB</h1>
+      <h1 class=" absolute top-1/2 -translate-y-1/2 bg-green-300 p-[1px_10px] rounded-[20px] my-10  inline-block mt-[-300px] text-[rgba(14,42,38,255)] group-hover:bg-green-200 group-hover:scale-[1.2] transition-transform duration-300" >@ada.jgh</h1>
+      <img
+        src="//uk.yfood.com/cdn/shop/files/yfood-home-socialproof-ada.webp?v=1724148766&width=750"
+        class="w-full h-[600px] mt-[130px] rounded-[20px] shadow-lg group-hover:scale-[0.95] transition-transform duration-30 group-hover:brightness-125 brightness-100" />
+      <div class="absolute right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <!-- <a href="#slide4" class="btn btn-circle">❮</a> -->
+        
+      </div>
+    </div>
+  </div>
+
+<!-- Question Section -->
+  <div id="accordion-color" class="w-[800px] md:w-[700px] sm:w-[600px] m-auto shadow-lg mb-[80px]" data-accordion="collapse" data-active-classes="bg-green-200 dark:bg-green-200 text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)]">
+    <h2 id="accordion-color-heading-1">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-[rgba(14,42,38,255)] border border-b-4 border-[rgba(14,42,38,255)] rounded-t-xl focus:ring-2 focus:ring-[rgba(14,42,38,255)] dark:focus:ring-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] hover:bg-green-200 dark:hover:bg-green-400 gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="false" aria-controls="accordion-color-body-1">
+        <span class="text-[rgba(14,42,38,255)] font-extrabold text-xl">What is Smart Food?</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-[rgba(14,42,38,255)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+      <div class="p-5 border border-b-0 border-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)]  dark:bg-green-200 ]">
+        <p class="mb-2 text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] ">yfood's ready-to-drink meals fall under the "Smart Food" category — a new category of food
+          with a complete nutrient profile that can be consumed quickly and easily at any time. Our
+          products are the result of the interplay between nutritional science and technology. The
+          drinks enable people to consume a balanced diet anytime and anywhere. Smart Food is
+          something bigger than other food trends or categories such as Functional Food, classic
+          ready meals or protein drinks, because it is convenient, <a href="" class="text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] underline">healthy</a>, tasty and sustainable.</p>
+      </div>
+    </div>
+    <h2 id="accordion-color-heading-2">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-[rgba(14,42,38,255)] border border-b-4 border-[rgba(14,42,38,255)]  focus:ring-2 focus:ring-[rgba(14,42,38,255)] dark:focus:ring-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] hover:bg-green-200 dark:hover:bg-green-400 gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+        <span class="text-[rgba(14,42,38,255)] font-extrabold text-xl">Does yfood make you full?</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-[rgba(14,42,38,255)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+      <div class="p-5 border border-b-0 border-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)]">
+        <p class="mb-2 text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)]">Well, of course! Our products are designed to satisfy your hunger to different extents, based
+          on their calorie content. For example, our bars are intended as a snack to keep you going
+          between meals, whereas our ready-to-drink meals and shakes can keep you full for up to
+          several hours. And, most importantly, without placing any stress on the digestive system.
+          Please note that satiation levels depend on individual physiological factors, such as height,
+          activity level and sensitivity.<br><br>
+          Good to know: In collaboration with the University of Lübeck, we conducted scientific
+          research on the satiety effects of our products compared to traditional convenience foods.
+          The findings revealed that our ready-to-drink meals resulted in a significantly stronger
+          feeling of satiety than, for instance, a burger or Caesar salad, while also offering a more
+          complete nutrient profile./p>
+      </div>
+    </div>
+    <h2 id="accordion-color-heading-3">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-[rgba(14,42,38,255)] border border-b-4 border-[rgba(14,42,38,255)]  focus:ring-2 focus:ring-[rgba(14,42,38,255)] dark:focus:ring-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] hover:bg-green-200 dark:hover:bg-green-400 gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+        <span class="text-[rgba(14,42,38,255)] font-extrabold text-xl">How are your products different?</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-[rgba(14,42,38,255)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-2">
+      <div class="p-5 border border-b-0 border-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)]">
+        <p class="mb-2 text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)]">First of all, all our products have a complete nutrient profile, they taste good, and are easy
+          to prepare.<br><br>
+          Our <a href="" class="text-[rgba(14,42,38,255)] underline">drinks</a>
+           are complete, balanced meals. This means that they fill you up for several hours
+          and provide you with energy without placing any stress on the digestive system. One drink
+          contains 500 kcal, which covers 25% of your daily energy and nutrient requirements (based
+          on the average energy requirement of an adult of 2,000 kcal).<br><br>
+          The shakes follow the same concept as the drinks but come in <a href="" class="text-[rgba(14,42,38,255)] underline">powders</a> form, allowing you to
+          prepare and mix them yourself, without the need for any heating or blending tools. Based on
+          our recommended intake, one serving provides 400 kcal of energy. By preparing the shakes
+          yourself, you can determine the mixing ratio, consistency and calorie content that works for
+          you.<br><br>
+          Our <a href="" class="text-[rgba(14,42,38,255)] underline">bars</a> are intended as balanced snacks to sustain you in between meals. Being only 60g,
+          they can easily fit in your pocket or backpack.</p>
+      </div>
+    </div>
+    <h2 id="accordion-color-heading-4">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-[rgba(14,42,38,255)] border  border-[rgba(14,42,38,255)] rounded-b-xl focus:ring-2 focus:ring-[rgba(14,42,38,255)] dark:focus:ring-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)] hover:bg-green-200 dark:hover:bg-green-400 gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
+        <span class="text-[rgba(14,42,38,255)] font-extrabold text-xl">What is recommended intake for yfood?</span>
+        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-[rgba(14,42,38,255)]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+        </svg>
+      </button>
+    </h2>
+    <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-3">
+      <div class="p-5 border border-t-0 border-[rgba(14,42,38,255)] dark:border-[rgba(14,42,38,255)] rounded-b-xl">
+        <p class="mb-2 text-[rgba(14,42,38,255)] dark:text-[rgba(14,42,38,255)]">yfood is made for those situations when you don't have access to fresh and 
+          <a href="" class="text-[rgba(14,42,38,255)] underline">healthy</a> meals. It
+          can be consumed at any time of the day — for breakfast, lunch, dinner, or even as a snack to
+          keep you going throughout the day. We recommend a mindful consumption of yfood
+          consciously as part ofa balanced and varied diet, alongside fresh, high-quality produce. Be
+          mindful of your personal physiological needs, such as weight, height, and activity level. It's
+          crucial to note that yfood is not meant to fully replace traditional meals — maintaining a
+          diverse and varied diet with fresh, high-quality foods is as important as the social and
+          cultural experiences of eating with others.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer Section -->
+<footer class="footer sm:footer-horizontal bg-black text-base-content lg:p-[60px_100px] md:p-[60px_20px] p-[60px_10px] mb-[-50px]">
+  <nav>
+    <img src="/Assets/image/yFood_Logo.svg" class="w-[150px] mb-4 filter invert hover:scale-105 duration-150" alt="yfood Logo">
+    <div class="flex flex-row gap-[20px]">
+      <i data-lucide="facebook" class=" text-gray-400 hover:scale-105 cursor-pointer hover:text-blue-400"></i>
+      <i data-lucide="instagram" class=" text-gray-400 hover:scale-105 cursor-pointer hover:text-pink-300"></i>
+      <i data-lucide="twitter" class=" text-gray-400 hover:scale-105 cursor-pointer hover:text-blue-300"></i>
+    </div>
+  </nav>
+  <nav class="text-[15px]">
+    <h6 class="footer-titles font-extrabold text-[20px]">Shop</h6><br>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Drinks</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200  hover:text-[18px]">Powder</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Bars</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Taster packs</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Limited editions</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">All products</a>
+  </nav>
+  <nav class="text-[15px]">
+    <h6 class="footer-titles font-extrabold text-[20px]">Info</h6><br>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Smart Food</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Subscriptions</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Store Locator</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Refer a friend</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Health benefits</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">FAQ</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Cancel your subscriptions</a>
+  </nav>
+  <nav class="text-[15px]">
+    <h6 class="footer-titles font-extrabold text-[20px]">About us</h6><br>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Story</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Contacts</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Press</a>
+    <a class="link link-hover hover:translate-x-1.5 duration-100 transition-all hover:text-green-200 hover:text-[18px]">Career</a>
+  </nav>
+  <form>
+    <h6 class="footer-titles font-extrabold text-5xl text-white w-[330px]">Get your 10% voucher.</h6>
+    <fieldset class="w-80">
+      <div class="join gap-3 pt-[15px] pb-[15px]">
+        <div
+          class="border border-white relative group rounded-xl hover:border-green-200 w-full md:w-[300px]">
+          <input
+            type="email"
+            name=""
+            class="peer border-none pt-1 w-[100%] bg-black font-fugaz text-xl font-bold p-[10px_30px] rounded-xl"
+            id=""
+          />
+          <label
+            for="email"
+            class="absolute left-[20px] top-[7px] peer-focus:top-[0px] peer-focus:text-sm text-xl transition-all duration-200"
+            >Email
+          </label>
+        </div>
+        <button class="btn btn-primary text-[rgba(14,42,38,255)] bg-white join-item rounded-lg hover:border-green-200 hover:border-2 border-2 border-transparent">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>
+        </button>
+      </div>
+      <h1 class="text-gray-400 text-[12px]">You can unsubscribe from the service at any time - every email contains
+        an unsubscribe link. Your data will not be passed on to third parties. By
+        registering, you agree to the <a href="" class="underline">terms and conditions
+        </a> and the <a href="" class="underline">privacy policy.</a></h1>
+    </fieldset>
+  </form>
+</footer>
+<footer class="footer footer-horizontal footer-center bg-black mt-[-60px] text-base-content rounded p-10">
+  <nav class="grid grid-flow-col gap-4">
+    <a class="link link-hover">Privacy policy</a>
+    <a class="link link-hover">Refund policy</a>
+    <a class="link link-hover">Terms of service</a>
+    <a class="link link-hover">Shipping and Payment</a>
+    <a class="link link-hover">Contact information</a>
+    <a class="link link-hover">Legal notice</a>
+    <a class="link link-hover">Accessibility</a>
+    <a class="link link-hover">Change privacy settings</a>
+  </nav>
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+      <a>
+        <img src="/Assets/image/ApplePay.png" class="w-[50px] h-[30px] rounded-[3px] bg-white object-cover p-2 hover:scale-110 transition-transform duration-200 cursor-pointer" alt="Trustpilot Logo">
+      </a>
+
+     
+    </div>
+  </nav>
+  <aside class="flex gap-[40px]">
+    <p class="flex cursor-pointer">
+      Region (store):
+      <img src="/Assets/image/EnglishFlag.png" class=" w-[25px] h-auto ml-1.5 mr-1.5 border-2 rounded-[50%] border-transparent hover:border-white" alt="Trustpilot Logo">
+      United Kingdom
+    </p>
+    <p class="flex cursor-pointer">
+      Language:
+      <img src="/Assets/image/EnglishFlag.png" class=" w-[25px] h-auto ml-1.5 mr-1.5 border-2 rounded-[50%] border-transparent hover:border-white" alt="Trustpilot Logo">
+      United Kingdom
+      English
+    </p>
+  </aside>
+  <aside>
+    <p>© 2025, yfood labs UK</p>
+  </aside>
+</footer>
+
+</body>
+    <script type="module" src="https://unpkg.com/cally"></script> 
+    <script>
+        lucide.createIcons();
+
+        // Dropdown functionality to close other dropdowns when one is opened
+        document.addEventListener('DOMContentLoaded', function() {
+    const dropdowns = document.querySelectorAll('details.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('toggle', function() {
+            if (this.open) {
+                // Close all other dropdowns when this one opens
+                dropdowns.forEach(otherDropdown => {
+                    if (otherDropdown !== this && otherDropdown.open) {
+                        otherDropdown.open = false;
+                    }
+                });
+            }
+        });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideDropdown = event.target.closest('details.dropdown');
+        
+        if (!isClickInsideDropdown) {
+            dropdowns.forEach(dropdown => {
+                dropdown.open = false;
+            });
+        }
+    });
+});
+    </script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</html>

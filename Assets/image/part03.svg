@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" version="1.1" viewBox="0 0 2960 536">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9aa6b2;
+      }
+    </style>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.1.0 Build 92)  -->
+  <g>
+    <g id="Layer_1">
+      <sodipodi:namedview id="namedview29" bordercolor="#666666" borderopacity="1" fit-margin-bottom="20" fit-margin-left="20" fit-margin-right="20" fit-margin-top="20" gridtolerance="10" guidetolerance="10" inkscape:current-layer="Layer_1" inkscape:cx="1500" inkscape:cy="288.01436" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:showpageshadow="false" inkscape:window-height="715" inkscape:window-maximized="1" inkscape:window-width="1366" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="0.27297297" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+      <g id="g4174">
+        <path id="polygon5" class="cls-1" d="M134,0C59.4,0,0,71,0,268s33.3,268,134,268,123.1-108.7,123.1-198.5l-79.7-3.6c-1.5,74.6-8.7,122.4-39.9,122.4s-39.1-18.8-39.1-188.3,19.5-188.4,39.1-188.4,34,31.9,34,117.4l84-2.9C255.7,100,242.6,0,134,0ZM401.8,0C318.5,0,264.2,64.5,264.2,268s54.3,268,137.6,268,137.6-64.5,137.6-268-1.1-53.6-3.1-76.6c32.4,108.2,163.8,134.3,163.8,214.9s-10.9,50-42,50-40.6-50.7-40.6-79.7h0s-84,0-84,0c0,71,20.3,159.4,121,159.4s93.7-26.9,113.6-67.6v57.4h69.6V147.8h1.4l63,378.1h52.1l63.8-378.1h1.5v378.1h84v-248c1.8,195.6,55.6,258.1,137.5,258.1s126.6-52.4,136-211.6v201.5h94.2v-206.4h37.7c68.9,0,106.1-37.9,119.1-98.5-.7,14.8-1.1,30.4-1.1,47.1,0,203.5,54.3,268,137.6,268s137.6-64.5,137.6-268S1847.8,0,1764.5,0s-114.4,41.1-131.1,160.9c-1.2-108.9-56.8-150.8-162.2-150.8h-94.2v201.5C1367.6,52.4,1316.1,0,1241,0s-135.8,62.5-137.5,258.1V10.2h-122.4l-44.2,264.4h-1.4L893.4,10.2h-125.3v114.1C759.3,49.6,725.2,0,650.9,0s-120.8,61.7-121.7,138C509.8,35.8,463.8,0,401.8,0h0ZM1904.2,10.2v515.7h214.4v-79.7h-120.3V10.2h-94.2ZM2133.7,10.2v515.7h94.2V10.2h-94.2ZM2243.7,10.2v79.7h81.1v436h94.2V89.8h80.1l-61.2,436h78.9l13-114.4h76.1l13.7,114.4h165.1V213.7h1.5l100.7,312.2h73.1V10.2h-75.3v272.3h-1.4l-86.2-272.3h-92v474.3l-58.6-474.3h-136.2l-10.2,72.3V10.2h-256.4ZM401.8,79.7c21.7,0,34.8,22.5,34.8,134v108.7c0,111.5-13,134-34.8,134s-34.8-22.4-34.8-134v-108.7c0-111.5,13-134,34.8-134ZM648.6,79.7c37.7,0,37.7,48.5,37.7,77.5h81.8v163.6c-42.5-89.9-154.9-122.9-154.9-194s13-47.1,35.5-47.1ZM1241,79.7c21.7,0,34.8,22.5,34.8,134v108.7c0,111.5-13,134-34.8,134s-34.8-22.4-34.8-134v-108.7c0-111.5,13-134,34.8-134ZM1764.5,79.7c21.8,0,34.8,22.5,34.8,134v108.7c0,111.5-13,134-34.8,134s-34.8-22.4-34.8-134v-108.7c0-111.5,13-134,34.8-134ZM1472,89.8h7.2c31.2,0,60.1,2.2,60.1,76.8s-21,77.5-59.4,77.5h-7.9V89.8ZM2568.9,89.8h1.5l27.5,246.3h-58.6l29.6-246.3Z" inkscape:connector-curvature="0"/>
+      </g>
+    </g>
+  </g>
+</svg>
